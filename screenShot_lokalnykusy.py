@@ -90,8 +90,8 @@ while True:
         print("Wyslano")
         time.sleep(600)
     except TimeoutException as e:
-        print("Wystepuje problem zwiazany z TimeoutException")
-        logging.debug("Wystepuje problem zwiazany z TimeoutException")
+        print("Wystepuje problem związany z TimeoutException")
+        logging.debug("Wystepuje problem związany z TimeoutException")
         traceback.print_exc()  
 
 driver.quit()
