@@ -8,9 +8,11 @@ Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
 ExecStart=/usr/bin/python3 /home/devel/Scripts_screenshoot/screenShot.py
-Restart=on-abort
+Restart=always
+RuntimeMaxSec=1d
 User=devel
 Group=devel
 
 [Install]
 WantedBy=graphical.target
+
